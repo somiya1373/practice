@@ -78,13 +78,23 @@
 // }
 
 //find an element in an array
-public static void main(String[] args){
-    int[] arr={1,2,3,4,5,6,7,8,9};
-    int target=3;
+// public static void main(String[] args){
+//     int[] arr={1,2,3,4,5,6,7,8,9};
+//     int target=15;
 
-    for(int i=0; i<arr.length; i++){
-        if(arr[i]==target){
-            System.out.println("Element found at index: "+i);
-        }
+//     for(int i=0; i<arr.length; i++){
+//         if(arr[i]==target){
+//             System.out.println("Element found at index: "+i);
+//         }
+//     }
+// }
+
+
+//reverse an array
+public static void main(String[] args){
+    int[] arr={2,5,7,3,1,4,7};
+
+    for(int i=arr.length-1; i>=0; i--){
+        System.out.println(arr[i]);
     }
 }
