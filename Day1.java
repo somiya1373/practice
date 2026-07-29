@@ -91,10 +91,23 @@
 
 
 //reverse an array
-public static void main(String[] args){
-    int[] arr={2,5,7,3,1,4,7};
+// public static void main(String[] args){
+//     int[] arr={2,5,7,3,1,4,7};
 
-    for(int i=arr.length-1; i>=0; i--){
-        System.out.println(arr[i]);
+//     for(int i=arr.length-1; i>=0; i--){
+//         System.out.println(arr[i]);
+//     }
+// }
+
+//copy one array to another
+public static void main(String[] args){
+    int[] arr={1,2,3,4,5};
+    int[] arr2= new int[arr.length];
+
+    for(int i=0; i<arr.length; i++){
+        arr2[i]=arr[i];
+    }
+    for(int i=0; i<arr2.length; i++){
+        System.out.println(arr2[i]);
     }
 }
