@@ -115,18 +115,37 @@
 
 //find second largest element in an array
 
+// public static void main(String[] args){
+//     int[] arr={1,2,3,4,5};
+//     int largest=arr[0];
+//     int secondLargest=Integer.MIN_VALUE;
+
+//     for(int i=0; i<arr.length; i++){
+//         if(arr[i]>largest){
+//             secondLargest=largest;
+//             largest=arr[i];
+//         }else if(arr[i]>secondLargest && arr[i]!=largest){
+//             secondLargest=arr[i];
+//         }
+//     }
+//     System.out.println("Second largest element is: "+secondLargest);
+// }
+
+
+//check if an array is sorted or not
 public static void main(String[] args){
     int[] arr={1,2,3,4,5};
-    int largest=arr[0];
-    int secondLargest=Integer.MIN_VALUE;
+    boolean isSorted=true;
 
-    for(int i=0; i<arr.length; i++){
-        if(arr[i]>largest){
-            secondLargest=largest;
-            largest=arr[i];
-        }else if(arr[i]>secondLargest && arr[i]!=largest){
-            secondLargest=arr[i];
+    for(int i=0; i<arr.length-1; i++){
+        if(arr[i]>arr[i+1]){
+            isSorted=false;
+            break;
         }
     }
-    System.out.println("Second largest element is: "+secondLargest);
+    if(isSorted){
+        System.out.println("Array is sorted");
+    }else{
+        System.out.println("Array is not sorted");
+    }
 }
