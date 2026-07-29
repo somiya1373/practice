@@ -34,6 +34,18 @@
 
 
 //find sum of all elements in an array
+// public static void main(String[] args){
+//     int[] arr={1,2,3,4,5};
+//     int sum=0;
+
+//     for(int i=0; i<arr.length; i++){
+//         sum=sum+arr[i];
+//     }
+//     System.out.println(sum);
+// }
+
+
+//find average of all elements
 public static void main(String[] args){
     int[] arr={1,2,3,4,5};
     int sum=0;
@@ -41,5 +53,5 @@ public static void main(String[] args){
     for(int i=0; i<arr.length; i++){
         sum=sum+arr[i];
     }
-    System.out.println(sum);
+    System.out.println(sum/arr.length);
 }
