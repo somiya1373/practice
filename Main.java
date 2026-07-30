@@ -133,19 +133,42 @@
 
 
 //check if an array is sorted or not
-public static void main(String[] args){
-    int[] arr={1,2,3,4,5};
-    boolean isSorted=true;
+// public static void main(String[] args){
+//     int[] arr={1,2,3,4,5};
+//     boolean isSorted=true;
 
-    for(int i=0; i<arr.length-1; i++){
-        if(arr[i]>arr[i+1]){
-            isSorted=false;
-            break;
+//     for(int i=0; i<arr.length-1; i++){
+//         if(arr[i]>arr[i+1]){
+//             isSorted=false;
+//             break;
+//         }
+//     }
+//     if(isSorted){
+//         System.out.println("Array is sorted");
+//     }else{
+//         System.out.println("Array is not sorted");
+//     }
+// }
+
+
+//palindrome
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {121, 123, 454, 567, 99};
+
+        for (int num : arr) {
+            int original = num;
+            int reverse = 0;
+
+            while (num > 0) {
+                int digit = num % 10;
+                reverse = reverse * 10 + digit;
+                num /= 10;
+            }
+
+            if (original == reverse) {
+                System.out.println(original);
+            }
         }
-    }
-    if(isSorted){
-        System.out.println("Array is sorted");
-    }else{
-        System.out.println("Array is not sorted");
     }
 }
