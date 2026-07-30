@@ -152,23 +152,47 @@
 
 
 //palindrome
-public class Main {
-    public static void main(String[] args) {
-        int[] arr = {121, 123, 454, 567, 99};
+// public class Main {
+//     public static void main(String[] args) {
+//         int[] arr = {121, 123, 454, 567, 99};
 
-        for (int num : arr) {
-            int original = num;
-            int reverse = 0;
+//         for (int num : arr) {
+//             int original = num;
+//             int reverse = 0;
 
-            while (num > 0) {
-                int digit = num % 10;
-                reverse = reverse * 10 + digit;
-                num /= 10;
+//             while (num > 0) {
+//                 int digit = num % 10;
+//                 reverse = reverse * 10 + digit;
+//                 num /= 10;
+//             }
+
+//             if (original == reverse) {
+//                 System.out.println(original);
+//             }
+//         }
+//     }
+// }
+
+
+//check the largest and smallest in one traversal
+public class Main{
+    public static void main(String[] args){
+        int[] arr={1,2,3,4,5,6,7,8,9};
+
+        int max=arr[0];
+        int min=arr[0];
+
+        for(int i=1; i<arr.length; i++){
+            if(arr[i]>max){
+                max=arr[i];
+                max++;
+            }else if(arr[i]<min){
+                min=arr[i];
+                min--;
             }
 
-            if (original == reverse) {
-                System.out.println(original);
-            }
         }
+                    System.out.println("Max: "+max);
+            System.out.println("Min: "+min);
     }
 }
