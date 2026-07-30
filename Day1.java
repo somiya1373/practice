@@ -200,23 +200,26 @@
 
 //count positive negative and zero in an array
 
-public class Main{
-    public static void main(String[] args){
-        int[] arr={-1,-8,-9,-9,0,9,6,4,0,-8};
-        int pos=0;
-        int neg=0;
-        int zero=0;
-        for(int i=0; i<arr.length; i++){
-            if(arr[i]>0){
-                pos++;
-            }else if(arr[i]<0){
-                neg++;
-            }else{
-                zero++;
-            }
-        }
-        System.out.println("Positive: "+pos);
-        System.out.println("Negative: "+neg);
-        System.out.println("Zero: "+zero);
-    }
-}
+// public class Main{
+//     public static void main(String[] args){
+//         int[] arr={-1,-8,-9,-9,0,9,6,4,0,-8};
+//         int pos=0;
+//         int neg=0;
+//         int zero=0;
+//         for(int i=0; i<arr.length; i++){
+//             if(arr[i]>0){
+//                 pos++;
+//             }else if(arr[i]<0){
+//                 neg++;
+//             }else{
+//                 zero++;
+//             }
+//         }
+//         System.out.println("Positive: "+pos);
+//         System.out.println("Negative: "+neg);
+//         System.out.println("Zero: "+zero);
+//     }
+// }
+
+
+//find the frequency of an element in an array
