@@ -123,7 +123,7 @@
 //         return head;
 //     }
 // }
-
+// Merge two sorted arrays into a single sorted array
 import java.util.Arrays;
 
 public class Day3 {
